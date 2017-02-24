@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:id="@+id/top_bar_root"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:background="@color/bg" >-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/top_bar_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/detail_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/top_bar_h"
+            android:background="@color/white2"></FrameLayout>
+
+        <!--    <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_bar_h"
+                android:background="@color/material_blue_grey_900">
+            </android.support.v7.widget.Toolbar>-->
+
+        <include
+            android:id="@+id/detail_top_bar"
+            layout="@layout/widget_activity_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_bar_h" />
+
+        <!--<View-->
+            <!--android:id="@+id/detail_top_bar_shadow"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="7dp"-->
+            <!--android:layout_marginTop="@dimen/top_bar_h"-->
+            <!--android:background="@drawable/sticky_shadow_default"-->
+            <!--android:visibility="gone" />-->
+
+        <!--<org.hahayj.library_main.widget.menu.SimpleMenuLayout-->
+        <!--android:id="@+id/detail_menu"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/widget_size_main_bottom_menu_height"-->
+        <!--android:background="@drawable/border_white_thin"-->
+        <!--android:layout_gravity="bottom">-->
+
+        <!--</org.hahayj.library_main.widget.menu.SimpleMenuLayout>-->
+
+    </FrameLayout>
+</LinearLayout>

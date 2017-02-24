@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.hctk.Activity.HC_MainActivity">
+
+
+            <!--动态切换fragment占位符（View）-->
+    <FrameLayout
+        android:id="@+id/fragment_placeHolder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#999">
+    </FrameLayout>
+
+            <!--选项菜单组-->
+    <RadioGroup
+        android:id="@+id/rg_moduleOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:textColor="@drawable/btn_optionmenu_color"
+            android:text="首页"/>
+
+        <RadioButton
+            android:id="@+id/rb_shareGoods"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:textColor="@drawable/btn_optionmenu_color"
+            android:text="晒单"/>
+
+        <RadioButton
+            android:id="@+id/rb_shoppingCart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:textColor="@drawable/btn_optionmenu_color"
+            android:text="购物车"/>
+
+        <RadioButton
+            android:id="@+id/rb_myAccount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:text="我的账号"
+            android:textColor="@drawable/btn_optionmenu_color"/>
+    </RadioGroup>
+
+</LinearLayout>
